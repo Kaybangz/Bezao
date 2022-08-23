@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:   "Quicksand", Lato, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Quicksand", Lato, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .wrapper {
@@ -36,7 +36,13 @@
 }
 
 .logo{
-    display: block;
+    display: flex;
+}
+
+.logo_vector{
+    height: 10px;
+    width: 10px;
+    object-fit: cover;
 }
 
 .primary_nav ul {
@@ -221,13 +227,13 @@
 .hero_image {
     width: 100%;
     height: auto;
-    
 }
 
 .hero_image img {
+    object-fit: cover;
     width: 100%;
     height: 100%;
-    border: 2px solid #da3743;
+    border: 1px solid #da3743;
     border-radius: 100%;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
@@ -349,6 +355,7 @@
     -ms-transition: all .2s ease;
     -o-transition: all .2s ease;
     cursor: pointer;
+    flex: 1;
 }
 
 .menu .card:hover .menu_text h2 {
@@ -366,11 +373,14 @@
 
 .menu .card img {
     width: 100%;
+    height: 220px;
     border-radius: 5px 5px 0 0;
     -webkit-border-radius: 5px 5px 0 0;
     -moz-border-radius: 5px 5px 0 0;
     -ms-border-radius: 5px 5px 0 0;
     -o-border-radius: 5px 5px 0 0;
+    flex: 1;
+    object-fit: cover;
 }
 
 .menu_text {
@@ -468,13 +478,13 @@
 }
 
 .testimonial_text h2 {
-    font-size: clamp(1.4rem, 4.5vw, 1.8rem);
-    margin-bottom: .5rem;
+    font-size: clamp(1.5rem, 3.5vw, 1.8rem);
+    margin-bottom: 1rem;
 }
 
 .testimonial_text p {
-    font-size: clamp(.9rem, 4.5vw, 1.1rem);
-    margin-bottom: .8rem;
+    font-size: clamp(.8rem, 3.5vw, .9rem);
+    margin-bottom: 1rem;
 }
 
 .testimonial_card {
@@ -506,6 +516,10 @@
     font-size: clamp(.7rem, 4.5vw, .7rem);
     color: rgb(128, 122, 122);
     text-transform: uppercase;
+}
+
+.client_bio article p{
+    font-size: clamp(.7rem, 3.5vw, .8rem);
 }
 
 .client_img {
@@ -607,6 +621,7 @@
     -moz-border-radius: 6px 6px 0 0;
     -ms-border-radius: 6px 6px 0 0;
     -o-border-radius: 6px 6px 0 0;
+    object-fit: cover;
 }
 
 .blogs_card_text{
